@@ -1,0 +1,38 @@
+window.calendar {
+  padding: 4px;
+  font-family: $font-sans;
+  font-size: 16px;
+
+  box {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid $ink5;
+    background-color: $ink0;
+  }
+
+  .calendar {
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: $white0;
+
+    &.button {
+      color: $ink5;
+    }
+
+    &.header {
+      color: $white1;
+      font-weight: 800;
+    }
+
+    &.highlight {
+      color: $accent;
+      font-weight: 800;
+    }
+
+    &:selected {
+      background-color: $accent;
+      color: $ink2;
+      font-weight: 800;
+    }
+  }
+}

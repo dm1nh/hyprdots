@@ -1,0 +1,87 @@
+.notification {
+  padding: 16px;
+  background-color: $ink0;
+  border: 2px solid $ink4;
+  font-family: $font-sans;
+
+  &.critical {
+    border: 2px solid $red1;
+  }
+
+  button.close-button {
+    background-color: $ink2;
+  }
+
+  .content {
+    .title {
+      margin-right: 4px;
+      color: $white1;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .time {
+      color: $ink1;
+      font-size: 14px;
+    }
+
+    .description {
+      margin-top: 2px;
+      font-size: 16px;
+      color: $white1;
+      font-weight: 600;
+    }
+
+    .icon {
+      border-radius: 4px;
+      margin-right: 16px;
+
+      &.img {
+        border: 1px solid $ink4;
+      }
+    }
+  }
+
+  box.actions {
+    margin-top: 16px;
+
+    button {
+      background-color: $ink2;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 4px 6px;
+      font-weight: 600;
+      color: $ink4;
+    }
+  }
+
+  button.close-button {
+    margin-left: 4px;
+    border-radius: 4px;
+    min-width: 22px;
+    min-height: 22px;
+    color: $white0;
+
+    &:hover {
+      background-color: $ink3;
+      color: $white1;
+    }
+
+    &:active {
+      background-image: none;
+      background-color: $ink2;
+    }
+  }
+}
+
+window.notifications {
+  padding: 4px;
+
+  .notification {
+    border-radius: 8px;
+
+    .description {
+      min-width: 320px;
+    }
+  }
+}
