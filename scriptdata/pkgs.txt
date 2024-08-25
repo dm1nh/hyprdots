@@ -11,6 +11,7 @@ docker
 docker-compose
 docker-machine
 fd
+file-roller
 fish
 firefox-developer-edition
 git
