@@ -21,13 +21,13 @@ colorpicker() {
   sleep 1
   case $opt in
   $hex)
-    ~/.dotfiles/scripts/colorpicker.sh --hex
+    ~/.config/hypr/scripts/colorpicker.sh --hex
     ;;
   $rgb)
-    ~/.dotfiles/scripts/colorpicker.sh --rgb
+    ~/.config/hypr/scripts/colorpicker.sh --rgb
     ;;
   $hsl)
-    ~/.dotfiles/scripts/colorpicker.sh --hsl
+    ~/.config/hypr/scripts/colorpicker.sh --hsl
     ;;
   esac
 }
@@ -125,16 +125,16 @@ record() {
     case $opt in
 
     $fullscreen_sound)
-      ~/.dotfiles/scripts/record.sh --fullscreen-sound
+      ~/.config/hypr/scripts/record.sh --fullscreen-sound
       ;;
     $fullscreen)
-      ~/.dotfiles/scripts/record.sh --fullscreen
+      ~/.config/hypr/scripts/record.sh --fullscreen
       ;;
     $sound)
-      ~/.dotfiles/scripts/record.sh --sound
+      ~/.config/hypr/scripts/record.sh --sound
       ;;
     $selection)
-      ~/.dotfiles/scripts/record.sh
+      ~/.config/hypr/scripts/record.sh
       ;;
     esac
   fi
@@ -161,11 +161,11 @@ screenshot() {
   case $opt in
   $fullscreen)
     sleep 0.5
-    ~/.dotfiles/scripts/screenshot.sh --fullscreen
+    ~/.config/hypr/scripts/screenshot.sh --fullscreen
     ;;
   $selection)
     sleep 0.5
-    ~/.dotfiles/scripts/screenshot.sh --selection
+    ~/.config/hypr/scripts/screenshot.sh --selection
     ;;
   esac
 }

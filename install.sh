@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install basic packages
-sudo pacman -S --noconfirm --needed base-devel git fish
+sudo pacman -S --noconfirm --needed base-devel git
 
 if ! which paru >/dev/null; then
   sudo pacman -S --noconfirm --needed rustup
@@ -24,11 +24,13 @@ paru -Syy --noconfirm
 paru -Sy --noconfirm archlinux-keyring
 paru -S --noconfirm - <./scriptdata/pkgs.txt
 
+# Enable services
 sudo systemctl enable sddm
 
+# Create user directories
 xdg-user-dirs-update
 
-# Fonts
+# Copy fonts
 rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
 git clone https://github.com/dm1nh/fonts.git
@@ -37,8 +39,11 @@ sudo cp -R ./fonts/OpenSans /usr/share/fonts/
 rm -rf fonts
 fc-cache -r
 
-# Wallpapers
-sudo cp ./wallpapers/greeting.png /usr/share/sddm/themes/sugar-candy/Backgrounds/
+# Install sddm astronaut theme
+sudo rm -rf /usr/share/sddm/themes/astronaut
+sudo git clone https://github.com/dm1nh/sddm-astronaut.git /usr/share/sddm/themes/astronaut
+sudo cp -r ./misc/sddm.conf.d /etc/
+sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/Backgrounds/
 
 # Install GTK themes
 git clone https://github.com/dm1nh/themix-generator.git

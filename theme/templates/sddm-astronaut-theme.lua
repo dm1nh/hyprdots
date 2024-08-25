@@ -1,4 +1,15 @@
-[General]
+local util = require("theme.util")
+
+local M = {}
+
+M.name = "sddm-astronaut-theme"
+
+M.path = "sddm-astronaut-theme"
+M.filename = "theme.conf"
+
+M.gen = function(schema)
+	local template = util.template(
+		[[[General]
 
 Background="greet.png"
 ## Path relative to the theme root directory. Most standard image file formats are allowed including support for transparency. (e.g. background.jpeg/illustration.GIF/Foto.png/undraw.svgz)
@@ -40,23 +51,23 @@ BackgroundImageHAlignment="center"
 BackgroundImageVAlignment="center"
 ## As before but for the vertical position of the background picture relative to its visible area.
 
-MainColor="#dcdac9"
+MainColor="${white1}"
 ## Used for all elements when not focused/hovered etc. Usually the best effect is achieved by having this be either white or a very dark grey like #444 (not black for smoother antialias)
 ## Colors can be HEX or Qt names (e.g. red/salmon/blanchedalmond). See https://doc.qt.io/qt-5/qml-color.html
 
-AccentColor="#b3d57d"
+AccentColor="${accent}"
 ## Used for elements in focus/hover/pressed. Should be contrasting to the background and the MainColor to achieve the best effect.
 
 OverrideTextFieldColor=""
 ## The text color of the username & password when focused/pressed may become difficult to read depending on your color choices. Use this option to set it independently for legibility.
 
-BackgroundColor="#181820"
+BackgroundColor="${ink1}"
 ## Used for the user and session selection background as well as for ScreenPadding and FormBackground when either is true. If PartialBlur and FormBackground are both enabled this color will blend with the blur effect.
 
-placeholderColor="#686760"
+placeholderColor="${gray1}"
 ## Placholder text color. Example: username, password.
 
-IconColor="#dcdac9"
+IconColor="${white1}"
 ## System icon colors
 
 OverrideLoginButtonTextColor=""
@@ -143,4 +154,11 @@ TranslateReboot=""
 TranslateShutdown=""
 TranslateVirtualKeyboardButton=""
 ## These don't necessarily need to translate anything. You can enter whatever you want here.
-    
+    ]],
+		schema
+	)
+
+	return template
+end
+
+return M

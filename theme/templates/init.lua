@@ -6,6 +6,7 @@ local templates = {
 	"hyprland",
 	"imv",
 	"rofi",
+	"sddm-astronaut-theme",
 	"zathura",
 }
 
