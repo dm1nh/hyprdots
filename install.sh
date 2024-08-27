@@ -60,11 +60,6 @@ cp -R ./misc/.icons ~/
 # Remove default cursor theme
 sudo rm -rf /usr/share/icons/default
 
-# fnm
-if ! which fnm >/dev/null; then
-  curl -fsSL https://fnm.vercel.app/install | bash
-fi
-
 # pnpm
 if ! which pnpm >/dev/null; then
   curl -fsSL https://get.pnpm.io/install.sh | sh -
