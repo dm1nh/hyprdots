@@ -33,17 +33,16 @@ xdg-user-dirs-update
 # Copy fonts
 rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
-git clone https://github.com/dm1nh/fonts.git
 cp -R ./fonts/{AstroNerdFont,MaterialIcons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
 sudo cp -R ./fonts/OpenSans /usr/share/fonts/
-rm -rf fonts
 fc-cache -r
 
 # Install sddm astronaut theme
 sudo rm -rf /usr/share/sddm/themes/astronaut
 sudo git clone https://github.com/dm1nh/sddm-astronaut.git /usr/share/sddm/themes/astronaut
 sudo cp -r ./misc/sddm.conf.d /etc/
-sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/Backgrounds/
+sudo cp ./config/sddm-astronaut-theme/theme.conf /usr/share/sddm/themes/astronaut/
+sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/
 
 # Install GTK themes
 git clone https://github.com/dm1nh/themix-generator.git
