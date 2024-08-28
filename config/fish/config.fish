@@ -17,7 +17,6 @@ set -Ux PNPM_HOME $HOME/.local/share/pnpm
 
 # Add paths
 fish_add_path -g ~/.local/bin $PNPM_HOME $HOME/.local/share/fnm
-fnm env | source
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
