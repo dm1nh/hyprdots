@@ -37,8 +37,8 @@ export default {
     disabled: "night-light-disabled-symbolic",
   },
   idle: {
-    enabled: "face-glasses-symbolic",
-    disabled: "face-glasses-symbolic",
+    enabled: "user-idle-symbolic",
+    disabled: "image-red-eye-symbolic",
   },
   systray: {
     open: "pan-start-symbolic",
