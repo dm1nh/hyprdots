@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-ags() {
-  pkill ags
-  ags -q
-  ags --clear-cache
-  ags --init
-  ags -b hypr
-}
-
 lock() {
   pkill hyprlock
   hyprlock &
@@ -39,9 +31,6 @@ portal() {
 }
 
 case $1 in
-ags)
-  ags
-  ;;
 lock)
   lock
   ;;

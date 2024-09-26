@@ -77,7 +77,7 @@ wlr-randr
 wlsunset
 wpa_supplicant
 xdg-desktop-portal
-xdg-desktop-portal-hyprland-git
+xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils
 xorg-xlsclients
