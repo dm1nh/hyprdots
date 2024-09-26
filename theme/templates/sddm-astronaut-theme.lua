@@ -61,10 +61,10 @@ AccentColor="${accent}"
 OverrideTextFieldColor=""
 ## The text color of the username & password when focused/pressed may become difficult to read depending on your color choices. Use this option to set it independently for legibility.
 
-BackgroundColor="${ink1}"
+BackgroundColor="${dark1}"
 ## Used for the user and session selection background as well as for ScreenPadding and FormBackground when either is true. If PartialBlur and FormBackground are both enabled this color will blend with the blur effect.
 
-placeholderColor="${gray1}"
+placeholderColor="${dark4}"
 ## Placholder text color. Example: username, password.
 
 IconColor="${white1}"
@@ -79,13 +79,13 @@ InterfaceShadowSize="6"
 InterfaceShadowOpacity="0.6"
 ## Double between 0 and 1. Alpha channel of the shadow behind the user and session selection background. Decrease or increase if it looks bad on your background.
 
-RoundCorners="20"
+RoundCorners="8"
 ## Integer in pixels. Radius of the input fields and the login button. Empty for square. Can cause bad antialiasing of the fields.
 
 ScreenPadding="0"
 ## Integer in pixels. Increase or delete this to have a padding of color BackgroundColor all around your screen. This makes your login greeter appear as if it was a canvas. Cool!
 
-Font="Open Sans"
+Font="Roboto Condensed"
 ## If you want to choose a custom font it will have to be available to the X root user. See https://wiki.archlinux.org/index.php/fonts#Manual_installation
 
 FontSize=""

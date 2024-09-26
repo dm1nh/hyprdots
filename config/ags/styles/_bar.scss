@@ -1,15 +1,15 @@
 tooltip {
   border-radius: 4px;
   padding: 2px 8px;
-  background-color: $ink3;
-  color: $white2;
+  background-color: $dark2;
+  color: $white1;
   font-family: $font-sans;
   font-size: 14px;
   font-weight: 500;
 }
 
 window.bar {
-  background-color: $inkdark;
+  background-color: $dark00;
   color: $white1;
   font-size: 14px;
   font-family: $font-sans;
@@ -36,23 +36,23 @@ window.bar {
     min-width: 16px;
     min-height: 16px;
     border-radius: 100%;
-    background-color: $ink3;
+    background-color: $dark3;
     color: $white2;
   }
 
   .workspace-button.active {
     background-color: $accent;
-    color: $ink2;
+    color: $dark2;
   }
 
   .workspace-button.occupied.active {
     background-color: $accent;
-    color: $ink2;
+    color: $dark2;
   }
 
   .workspace-button.occupied {
     background-color: $blue1;
-    color: $ink2;
+    color: $dark2;
   }
 
   .volume.active {
@@ -67,17 +67,17 @@ window.bar {
 
   .volume trough {
     border-radius: 4px;
-    background-color: $ink3;
+    background-color: $dark3;
   }
 
   .volume trough.active {
-    background-color: $ink2;
+    background-color: $dark2;
   }
 
   .active-client {
     font-size: 14px;
     font-weight: 600;
-    color: $white0;
+    color: $white1;
   }
 
   .volume,
@@ -89,7 +89,7 @@ window.bar {
   }
 
   .idle {
-    color: $ink6;
+    color: $dark4;
   }
 
   .nightlight.active {
@@ -120,5 +120,5 @@ window.bar {
 }
 
 .systray-button {
-  color: $gray2;
+  color: $dark4;
 }

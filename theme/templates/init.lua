@@ -5,6 +5,8 @@ local templates = {
 	"fish",
 	"hyprland",
 	"imv",
+	"interstellar-gtk",
+	"interstellar-darker-gtk",
 	"rofi",
 	"sddm-astronaut-theme",
 	"zathura",

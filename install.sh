@@ -34,7 +34,7 @@ xdg-user-dirs-update
 rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
 cp -R ./fonts/{AstroNerdFont,MaterialIcons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
-sudo cp -R ./fonts/OpenSans /usr/share/fonts/
+sudo cp -R ./fonts/RobotoCondensed /usr/share/fonts/
 fc-cache -r
 
 # Install sddm astronaut theme
@@ -45,9 +45,9 @@ sudo cp ./config/sddm-astronaut-theme/theme.conf /usr/share/sddm/themes/astronau
 sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/
 
 # Install GTK themes
-git clone https://github.com/dm1nh/themix-generator.git
-cp -R themix-generator/themes/Galax-Beige ~/.local/share/themes/
-rm -rf themix-generator
+git clone https://github.com/dm1nh/awesome-dots.git
+cp -R awesome-dots/theme/gtk/{Interstellar,Interstellar-Darker} ~/.local/share/themes/
+rm -rf awesome-dots
 
 # Backup old configs
 mv ~/.config ~/.config.backup

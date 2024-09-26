@@ -1,7 +1,7 @@
 .notification {
   padding: 16px;
-  background-color: $ink0;
-  border: 2px solid $ink4;
+  background-color: $dark0;
+  border: 2px solid $dark3;
   font-family: $font-sans;
 
   &.critical {
@@ -9,7 +9,7 @@
   }
 
   button.close-button {
-    background-color: $ink2;
+    background-color: $dark2;
   }
 
   .content {
@@ -21,7 +21,7 @@
     }
 
     .time {
-      color: $ink1;
+      color: $dark1;
       font-size: 14px;
     }
 
@@ -38,7 +38,7 @@
       margin-right: 16px;
 
       &.img {
-        border: 1px solid $ink4;
+        border: 1px solid $dark3;
       }
     }
   }
@@ -47,12 +47,12 @@
     margin-top: 16px;
 
     button {
-      background-color: $ink3;
+      background-color: $dark2;
       border-radius: 4px;
       font-size: 14px;
       padding: 4px 6px;
       font-weight: 600;
-      color: $gray1;
+      color: $dark5;
     }
   }
 
@@ -64,13 +64,13 @@
     color: $white0;
 
     &:hover {
-      background-color: $ink3;
+      background-color: $dark2;
       color: $white1;
     }
 
     &:active {
       background-image: none;
-      background-color: $ink2;
+      background-color: $dark1;
     }
   }
 }

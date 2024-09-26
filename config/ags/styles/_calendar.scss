@@ -6,8 +6,8 @@ window.calendar {
   box {
     padding: 8px;
     border-radius: 8px;
-    border: 2px solid $ink5;
-    background-color: $ink0;
+    border: 2px solid $dark3;
+    background-color: $dark0;
   }
 
   .calendar {
@@ -16,7 +16,7 @@ window.calendar {
     color: $white0;
 
     &.button {
-      color: $ink5;
+      color: $dark4;
     }
 
     &.header {
@@ -31,7 +31,7 @@ window.calendar {
 
     &:selected {
       background-color: $accent;
-      color: $ink2;
+      color: $dark1;
       font-weight: 800;
     }
   }

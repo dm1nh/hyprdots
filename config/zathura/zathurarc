@@ -5,7 +5,7 @@
 # ·▀▀▀ • ▀  ▀  ▀▀▀ ▀▀▀ · ▀▀▀ .▀  ▀ ▀  ▀ 
 #
 # Created by: Dang Minh Ngo
-# Github: @dangminhngo
+# Github: @dm1nh
 # Email: dangminhngo.dev@gmail.com
 #
 # read "man zathurarc"
@@ -27,7 +27,7 @@ map <C-i> recolor
 
 # OPTIONS
 # fonts
-set font "Astro Nerd Font Extended 11"
+set font "Astro Nerd Font Medium 11"
 
 # fit width
 set adjust-open "best-fit"
@@ -37,8 +37,8 @@ set scroll-step 60
 set guioptions ""
 set zoom-min 50
 
-# open zathura in dark mode
-# set recolor
+# open zathura in invert color mode
+set recolor
 
 # colorscheme 
 include theme
