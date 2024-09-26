@@ -25,7 +25,8 @@ paru -Sy --noconfirm archlinux-keyring
 paru -S --noconfirm - <./scriptdata/pkgs.txt
 
 # Enable services
-sudo systemctl enable sddm
+sudo systemctl enable sddm.service
+sudo systemctl enable rfkill-block@bluetooth.service # turn off bluetooth on startup
 
 # Create user directories
 xdg-user-dirs-update

@@ -29,13 +29,13 @@ window.bar {
   }
 
   .workspace-box {
-    padding: 9px 0px;
+    padding: 10px 0px;
   }
 
   .workspace-button {
-    min-width: 16px;
-    min-height: 16px;
-    border-radius: 100%;
+    min-width: 20px;
+    min-height: 8px;
+    border-radius: 4px;
     background-color: $dark3;
     color: $white2;
   }
