@@ -1,10 +1,15 @@
 return {
 	{
-		"dm1nh/interstellar.nvim",
+		dir = "~/repos/interstellar.nvim",
 		lazy = true,
 		priority = 1000,
-		opts = {},
 	},
+	-- {
+	-- 	"dm1nh/interstellar.nvim",
+	-- 	lazy = true,
+	-- 	priority = 1000,
+	-- 	opts = {},
+	-- },
 	{
 		"folke/tokyonight.nvim",
 		enabled = false,

@@ -10,7 +10,7 @@ export default function ActiveClient() {
       Widget.Icon({
         icon: hyprland.active.client
           .bind("class")
-          .as((cls) => (Utils.lookUpIcon(cls) ? cls : icons.clients[cls] ?? icons.clients.default)),
+          .as((cls) => (Utils.lookUpIcon(cls) ? cls : (icons.clients[cls] ?? icons.clients.default))),
         size: 16,
       }),
       Widget.Label({

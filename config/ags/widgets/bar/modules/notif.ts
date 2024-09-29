@@ -5,7 +5,7 @@ const n = await Service.import("notifications")
 
 const icon = Widget.Icon({
   icon: n.bind("dnd").as((dnd) => icons.notif[dnd ? "silent" : "noisy"]),
-  size: 16,
+  size: 14,
 })
 
 export default function Notif() {
