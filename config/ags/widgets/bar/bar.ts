@@ -4,7 +4,6 @@ import ActiveClient from "./modules/active-client"
 import Volume from "./modules/volume"
 import Nightlight from "./modules/nightlight"
 import Systray from "./modules/systray"
-import Bluetooth from "./modules/bluetooth"
 import Notif from "./modules/notif"
 import IdleInhibitor from "./modules/idle-inhibitor"
 
@@ -29,7 +28,7 @@ export default function Bar() {
         hpack: "end",
         hexpand: true,
         spacing: 16,
-        children: [Systray(), Volume(), IdleInhibitor(), Bluetooth(), Notif(), Nightlight(), Clock()],
+        children: [Systray(), Volume(), IdleInhibitor(), Notif(), Nightlight(), Clock()],
       }),
     }),
   })
