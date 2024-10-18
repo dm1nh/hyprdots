@@ -45,6 +45,9 @@ sudo cp -r ./misc/sddm.conf.d /etc/
 sudo cp ./config/sddm-astronaut-theme/theme.conf /usr/share/sddm/themes/astronaut/
 sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/
 
+# Fix function keys on apple keyboards or other machenical keyboards
+sudo cp -r ./misc/modprobe.d /etc/
+
 # Install GTK themes
 git clone https://github.com/dm1nh/awesome-dots.git
 cp -R awesome-dots/theme/gtk/{Interstellar,Interstellar-Darker} ~/.local/share/themes/
