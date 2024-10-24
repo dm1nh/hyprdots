@@ -127,4 +127,13 @@ return {
 			show_keys = false,
 		},
 	},
+
+	{ -- override telescope
+		"nvim-telescope/telescope.nvim",
+		opts = {
+			defaults = {
+				file_ignore_patterns = { "node_modules", "build", "dist" },
+			},
+		},
+	},
 }
