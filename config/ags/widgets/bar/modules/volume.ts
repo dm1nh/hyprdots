@@ -21,7 +21,11 @@ export default function Volume() {
   }
 
   function getVol() {
-    return Math.floor(audio.speaker.volume * 100) + "%"
+    return (
+      Math.floor(audio.speaker.volume * 100)
+        .toString()
+        .padStart(3, "0") + "%"
+    )
   }
 
   function toggle() {

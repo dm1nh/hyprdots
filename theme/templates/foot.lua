@@ -35,8 +35,8 @@ bright5=${purple2}
 bright6=${aqua2}
 bright7=${white2}
 
-selection-foreground=${white}
-selection-background=${dark1}
+selection-foreground=${dark1}
+selection-background=${accent}
 
 search-box-no-match=${dark1} ${red1}
 search-box-match=${dark1} ${green1}

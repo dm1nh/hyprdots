@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Galax Nerd Font Regular 16";
+  font:                           "Galax Nerd Font Regular 15";
   disable-history:                false;
   sidebar-mode:                   false;
 }
@@ -83,7 +83,7 @@ mainbox {
 
 element {
   background-color:               @dark1;
-  text-color:                     @white0;
+  text-color:                     @grey2;
   orientation:                    vertical;
   border-radius:                  4px;
 }
@@ -107,10 +107,10 @@ element alternate.urgent {
 element normal.active,
 element alternate.active {
   background-color:               @magenta1;
-  text-color:                     @dark0;
+  text-color:                     @dark1;
 }
 
 element selected {
   background-color:               @magenta1;
-  text-color:                     @dark0;
+  text-color:                     @dark1;
 }

@@ -13,6 +13,5 @@ export default function Clock() {
     name: "clock",
     label: time.bind(),
     tooltipText: date.bind(),
-    onClicked: () => App.toggleWindow("calendar"),
   })
 }
