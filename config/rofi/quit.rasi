@@ -29,7 +29,7 @@ window {
   border:                         2px;
   border-color:                   @red1;
   location:                       center;
-  width:                          578px;
+  width:                          648px;
   x-offset:                       0px;
   y-offset:                       0px;
 }
@@ -44,7 +44,7 @@ prompt {
 
 textbox-prompt-colon {
   expand:                         false;
-  str:                            "Have a great time, huh?";
+  str:                            "See you then";
   background-color:               @red1;
   text-color:                     @dark1;
   padding:                        4px 8px;
@@ -95,7 +95,7 @@ element-text {
   expand:                         true;
   horizontal-align:               0.5;
   vertical-align:                 0.5;
-  margin:                         28px 0px;
+  margin:                         36px 0px;
 }
 
 element normal.urgent,
