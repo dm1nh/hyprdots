@@ -10,7 +10,7 @@
  */
 
 configuration {
-  font:                           "Galax Nerd Font Regular 13.5";
+  font:                           "Galax Nerd Font Regular 16";
   show-icons:                     true;
   icon-theme:                     "Papirus-Dark";
   display-drun:                   "Applications";
@@ -39,7 +39,7 @@ prompt {
   background-color:               @accent;
   text-color:                     @dark1;
   border-radius:                  4px;
-  font:                           "Galax Nerd Font Regular 13.5";
+  font:                           "Galax Nerd Font Regular 16";
 }
 
 textbox-prompt-colon {

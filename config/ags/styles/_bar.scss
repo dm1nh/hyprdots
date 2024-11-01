@@ -20,7 +20,7 @@ window.bar {
   }
 
   .clock {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     color: $white1;
   }
@@ -33,30 +33,30 @@ window.bar {
     min-width: 16px;
     min-height: 16px;
     border-radius: 50%;
-    background-color: $dark2;
+    background-color: $dark3;
     color: $white2;
   }
 
   .workspace-button.active {
     background-color: $accent;
-    color: $dark2;
+    color: $dark3;
   }
 
   .workspace-button.occupied.active {
     background-color: $accent;
-    color: $dark2;
+    color: $dark3;
   }
 
   .workspace-button.occupied {
-    background-color: $orange1;
-    color: $dark2;
+    background-color: $dark5;
+    color: $dark3;
   }
 
   .volume,
   .idle {
-    font-size: 18px;
+    font-size: 20px;
     font-family: $font-icon;
-    color: $dark4;
+    color: $dark3;
   }
 
   .volume.active {
@@ -64,7 +64,7 @@ window.bar {
   }
 
   .volume .percentage {
-    font-size: 14px;
+    font-size: 18px;
     font-family: $font-sans;
     font-weight: 600;
   }
@@ -74,7 +74,7 @@ window.bar {
   }
 
   .active-client {
-    font-size: 16px;
+    font-size: 18px;
     color: $white2;
   }
 }

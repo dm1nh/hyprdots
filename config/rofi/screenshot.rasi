@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Galax Nerd Font Regular 13.5";
+  font:                           "Galax Nerd Font Regular 16";
   disable-history:                false;
   sidebar-mode:                   false;
 }

@@ -27,7 +27,7 @@ map <C-i> recolor
 
 # OPTIONS
 # fonts
-set font "Galax Nerd Font Medium 11"
+set font "Galax Nerd Font Regular 16"
 
 # fit width
 set adjust-open "best-fit"
