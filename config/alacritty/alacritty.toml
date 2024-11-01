@@ -1,22 +1,21 @@
-import = ["~/.config/alacritty/theme.toml"]
 
 [font]
 size = 14
 
 [font.bold]
-family = "Astro Nerd Font"
+family = "Galax"
 style = "Bold"
 
 [font.bold_italic]
-family = "Astro Nerd Font"
+family = "Galax"
 style = "Bold Italic"
 
 [font.italic]
-family = "Astro Nerd Font"
+family = "Galax"
 style = "Italic"
 
 [font.normal]
-family = "Astro Nerd Font"
+family = "Galax"
 style = "Regular"
 
 [font.offset]
@@ -30,7 +29,7 @@ hide_when_typing = true
 history = 2000
 multiplier = 3
 
-[shell]
+[terminal.shell]
 program = "/bin/fish"
 args = ["-l", "-c", "tmux"]
 
@@ -48,3 +47,8 @@ instance = "alacritty"
 [window.padding]
 x = 0
 y = 0
+
+[general]
+import = ["~/.config/alacritty/theme.toml"]
+
+[terminal]

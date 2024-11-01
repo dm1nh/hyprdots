@@ -5,36 +5,34 @@ tooltip {
   color: $white1;
   font-family: $font-sans;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 window.bar {
-  background-color: $dark00;
+  background-color: $dark;
   color: $white1;
-  font-size: 14px;
+  font-size: 16px;
   font-family: $font-sans;
   font-weight: 500;
 
   .bar-box {
-    padding: 7px 16px;
+    padding: 5px 16px;
   }
 
   .clock {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
     color: $white1;
   }
 
-  .workspaces {
-  }
-
   .workspace-box {
-    padding: 6px 0px;
+    padding: 4px 0px;
   }
 
   .workspace-button {
-    min-width: 18px;
-    border-radius: 4px;
+    min-width: 16px;
+    min-height: 16px;
+    border-radius: 50%;
     background-color: $dark3;
     color: $white2;
   }
@@ -54,70 +52,29 @@ window.bar {
     color: $dark2;
   }
 
-  .volume.active {
-    color: $green1;
-  }
-
-  .volume trough highlight {
-    border-radius: 4px;
-    background-color: $green1;
-    min-height: 6px;
-  }
-
-  .volume trough {
-    border-radius: 4px;
-    background-color: $dark3;
-  }
-
-  .volume trough.active {
-    background-color: $dark2;
-  }
-
-  .active-client {
-    font-size: 14px;
-    font-weight: 600;
-    color: $white1;
-  }
-
   .volume,
-  .network,
-  .nightlight,
-  .bluetooth,
-  .notifications {
-    color: $white2;
-  }
-
   .idle {
-    color: $dark3;
+    font-size: 18px;
+    font-family: $font-icon;
+    color: $dark4;
   }
 
-  .nightlight.active {
-    color: $yellow1;
+  .volume.active {
+    color: $purple1;
   }
 
-  .network.active {
-    color: $aqua1;
-  }
-
-  .bluetooth.active {
-    color: $blue1;
-  }
-
-  .notifications.active {
-    color: $amber1;
+  .volume .percentage {
+    font-size: 14px;
+    font-family: $font-sans;
+    font-weight: 600;
   }
 
   .idle.active {
-    color: $violet1;
+    color: $orange1;
   }
-}
 
-.systray {
-  .revealer {
-    padding: 0px 8px;
+  .active-client {
+    font-size: 16px;
+    color: $white2;
   }
-}
-
-.systray-button {
-  color: $dark4;
 }

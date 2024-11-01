@@ -1,12 +1,12 @@
 /config/*
 !/config/ags
-!/config/alacritty
 !/config/btop
 /config/btop/btop.log
 !/config/fish
 /config/fish/completions
 /config/fish/fish_variables
 !/config/fontconfig
+!/config/foot
 !/config/gtk-3.0
 /config/gtk-3.0/bookmarks
 !/config/gtk-4.0

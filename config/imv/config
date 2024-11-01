@@ -1,15 +1,15 @@
-# Interstellar for imv
+# Cozy for imv
 # ~/.config/imv/config
 
 # styling
 [options]
-background = #1c1f24
+background = #202729
 fullscreen = false
 overlay = true
-overlay_text_color = #bfc0c2
-overlay_background_color = #282c34
+overlay_text_color = #d5d6c8
+overlay_background_color = #232b2e
 overlay_background_alpha = ff
-overlay_font = Astro Nerd Font Medium:11
+overlay_font = Galax Nerd Font Medium:11
 overlay_position_bottom = false
 
 # bindings

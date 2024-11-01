@@ -2,9 +2,6 @@ import Workspaces from "./modules/workspaces"
 import Clock from "./modules/clock"
 import ActiveClient from "./modules/active-client"
 import Volume from "./modules/volume"
-import Nightlight from "./modules/nightlight"
-import Systray from "./modules/systray"
-import Notif from "./modules/notif"
 import IdleInhibitor from "./modules/idle-inhibitor"
 
 export default function Bar() {
@@ -28,7 +25,7 @@ export default function Bar() {
         hpack: "end",
         hexpand: true,
         spacing: 16,
-        children: [Systray(), Volume(), IdleInhibitor(), Notif(), Nightlight(), Clock()],
+        children: [Volume(), IdleInhibitor(), Clock()],
       }),
     }),
   })

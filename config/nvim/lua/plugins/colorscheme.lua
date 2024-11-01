@@ -1,6 +1,6 @@
 return {
 	{
-		dir = "~/repos/interstellar.nvim",
+		dir = "~/repos/cozy.nvim",
 		lazy = true,
 		priority = 1000,
 	},

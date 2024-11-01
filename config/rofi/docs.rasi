@@ -10,7 +10,7 @@
  */
 
 configuration {
-  font:                           "Astro Nerd Font Regular 13.5";
+  font:                           "Galax Nerd Font Regular 13.5";
   show-icons:                     true;
   icon-theme:                     "Papirus-Dark";
   display-drun:                   "Documents";
@@ -25,7 +25,7 @@ window {
   background-color:               @dark0;
   text-color:                     @white1;
   border:                         2px;
-  border-color:                   @violet1;
+  border-color:                   @purple1;
   border-radius:                  4px;
   width:                          800px;
   location:                       center;
@@ -36,16 +36,16 @@ window {
 prompt {
   enabled:                        true;
   padding:                        6px 12px;
-  background-color:               @violet1;
+  background-color:               @purple1;
   text-color:                     @dark1;
   border-radius:                  4px;
-  font:                           "Astro Nerd Font Regular 13.5";
+  font:                           "Galax Nerd Font Regular 13.5";
 }
 
 textbox-prompt-colon {
   padding:                        6px 12px;
   border-radius:                  4px;
-  background-color:               @violet1;
+  background-color:               @purple1;
   text-color:                     @dark1;
   expand:                         false;
   str:                            " :: ";
@@ -68,7 +68,7 @@ inputbar {
   text-color:                     @white2;
   expand:                         false;
   border-radius:                  4px;
-  border-color:                   @violet1;
+  border-color:                   @purple1;
 }
 
 listview {
@@ -114,6 +114,6 @@ element-text {
 }
 
 element selected {
-  background-color:               @violet1;
+  background-color:               @purple1;
   text-color:                     @dark0;
 }

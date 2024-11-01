@@ -6,27 +6,17 @@ const enabled = Variable(false, {
   listen: ["pgrep hypridle", (out) => !out],
 })
 
-const icon = Widget.Icon({
-  icon: enabled.bind().as((value) => (value ? icons.idle.enabled : icons.idle.disabled)),
+const icon = Widget.Label({
+  label: enabled.bind().as((value) => (value ? icons.idleInhibitor.enabled : icons.idleInhibitor.disabled)),
 })
 
 function toggle() {
   if (enabled.value) {
     enabled.setValue(false)
     sh(`hypridle &`)
-    Utils.notify({
-      iconName: icons.idle.disabled,
-      summary: "Idle Inhibitor",
-      body: "Off",
-    })
   } else {
     enabled.setValue(true)
     sh(`pkill hypridle`)
-    Utils.notify({
-      iconName: icons.idle.enabled,
-      summary: "Idle Inhibitor",
-      body: "On",
-    })
   }
 }
 
@@ -34,6 +24,7 @@ export default function IdleInhibitor() {
   return ToggleButton({
     name: "idle",
     child: icon,
+    tooltipText: enabled.bind().as((value) => (value ? "Enabled" : "Disabled")),
     onClicked: toggle,
     connection: [enabled, () => enabled.value],
   })

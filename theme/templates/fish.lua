@@ -22,9 +22,9 @@ set -l sel ${dark2}
 set -l red ${red1}
 set -l green ${green1}
 set -l yellow ${yellow1}
-set -l orange ${amber1}
+set -l orange ${orange1}
 set -l blue ${blue1}
-set -l purple ${violet1}
+set -l purple ${purple1}
 set -l magenta ${magenta1}
 set -l cyan ${aqua1}
 set -l black ${dark5}

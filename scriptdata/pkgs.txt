@@ -1,4 +1,3 @@
-alacritty
 aylurs-gtk-shell
 base-devel
 btop
@@ -14,6 +13,7 @@ fd
 file-roller
 fish
 firefox-developer-edition
+foot
 git
 gjs
 glfw
