@@ -33,7 +33,7 @@ window.bar {
     min-width: 16px;
     min-height: 16px;
     border-radius: 50%;
-    background-color: $dark3;
+    background-color: $dark2;
     color: $white2;
   }
 
@@ -48,7 +48,7 @@ window.bar {
   }
 
   .workspace-button.occupied {
-    background-color: $blue1;
+    background-color: $orange1;
     color: $dark2;
   }
 
@@ -60,7 +60,7 @@ window.bar {
   }
 
   .volume.active {
-    color: $purple1;
+    color: $accent;
   }
 
   .volume .percentage {
@@ -70,7 +70,7 @@ window.bar {
   }
 
   .idle.active {
-    color: $orange1;
+    color: $accent;
   }
 
   .active-client {
