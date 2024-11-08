@@ -46,8 +46,8 @@ export default function Volume() {
       ],
     }),
     onClicked: toggle,
-    onScrollUp: () => sh(`pamixer -i 5`),
-    onScrollDown: () => sh(`pamixer -d 5`),
+    onScrollUp: () => sh(`pamixer -i 1`),
+    onScrollDown: () => sh(`pamixer -d 1`),
     onSecondaryClickRelease: () => sh(`pavucontrol`),
     connection: [audio.speaker, () => !audio.speaker.is_muted],
   })
