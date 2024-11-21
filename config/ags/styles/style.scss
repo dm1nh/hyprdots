@@ -1,0 +1,85 @@
+@import "./palette";
+
+$font: Galax Nerd Font;
+$font-icon: Material Symbols Rounded;
+
+window.bar {
+  all: unset;
+  background: transparent;
+  color: $dark;
+
+  button {
+    all: unset;
+  }
+
+  > centerbox {
+    min-height: 28px;
+    background: $dark;
+  }
+
+  .workspaces {
+    margin-left: 6px;
+
+    .workspace-button {
+      all: unset;
+      min-width: 18px;
+      min-height: 18px;
+      border-radius: 50%;
+      background: $dark3;
+      transition: 250ms background;
+    }
+
+    .workspace-button.focused,
+    .workspace-button.focused.occupied {
+      background: $accent;
+    }
+
+    .workspace-button.occupied {
+      background: $blue1;
+    }
+  }
+
+  .focused-client {
+    color: $white2;
+
+    .client-app {
+      margin-left: 8px;
+      font-family: $font;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .volume {
+    color: $accent;
+
+    .volume-icon {
+      font-family: $font-icon;
+      font-size: 20px;
+    }
+
+    .volume-value {
+      margin-left: 8px;
+      font-family: $font;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .idle-inhibitor {
+    color: $accent;
+
+    .idle-inhibitor-icon {
+      font-family: $font-icon;
+      font-size: 20px;
+    }
+  }
+
+  .clock {
+    margin-right: 6px;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 900;
+    color: $white2;
+  }
+}

@@ -34,7 +34,7 @@ xdg-user-dirs-update
 # Copy fonts
 rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
-cp -R ./fonts/{GalaxNerdFont,JetBrainsMonoNerdFont,MaterialIcons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
+cp -R ./fonts/{GalaxNerdFont,JetBrainsMonoNerdFont,MaterialSymbols,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
 sudo cp -R ./fonts/Roboto /usr/share/fonts/
 fc-cache -r
 
