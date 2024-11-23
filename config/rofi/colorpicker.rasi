@@ -27,7 +27,7 @@ window {
   transparency:                   "real";
   border-radius:                  4px;
   border:                         2px;
-  border-color:                   @aqua1;
+  border-color:                   @matcha1;
   location:                       center;
   width:                          392px;
   x-offset:                       0px;
@@ -38,14 +38,14 @@ prompt {
   enabled:                        true;
   padding:                        4px 8px;
   background-color:               @dark1;
-  text-color:                     @aqua1;
+  text-color:                     @matcha1;
   border-radius:                  4px;
 }
 
 textbox-prompt-colon {
   expand:                         false;
   str:                            "Colorpicker";
-  background-color:               @aqua1;
+  background-color:               @matcha1;
   text-color:                     @dark1;
   padding:                        4px 8px;
   border-radius:                  4px;
@@ -59,7 +59,7 @@ inputbar {
   expand:                         false;
   border:                         0px;
   border-radius:                  0px;
-  border-color:                   @aqua1;
+  border-color:                   @matcha1;
   margin:                         0px 0px 0px 0px;
   padding:                        0px;
   position:                       center;
@@ -106,11 +106,11 @@ element alternate.urgent {
 
 element normal.active,
 element alternate.active {
-  background-color:               @aqua1;
+  background-color:               @matcha1;
   text-color:                     @dark1;
 }
 
 element selected {
-  background-color:               @aqua1;
+  background-color:               @matcha1;
   text-color:                     @dark1;
 }

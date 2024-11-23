@@ -21,6 +21,7 @@ gnome-bluetooth-3.0
 gnu-netcat
 go
 grim
+gtk-engine-murrine
 gtk-layer-shell
 gtk3
 gtk4

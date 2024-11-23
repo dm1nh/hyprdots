@@ -2,64 +2,64 @@
 # ~/.config/alacritty/theme.toml
 
 [colors.cursor]
-cursor = "#d5d6c8"
-text = "#202729"
+cursor = "#efe2c1"
+text = "#282828"
 
 [colors.footer_bar]
-background = "#e6e6de"
-foreground = "#1c2225"
+background = "#fbf1c7"
+foreground = "#21201f"
 
 [colors.hints.end]
-background = "#1c2225"
-foreground = "#d5d6c8"
+background = "#21201f"
+foreground = "#efe2c1"
 
 [colors.hints.start]
-background = "#d5d6c8"
-foreground = "#1c2225"
+background = "#efe2c1"
+foreground = "#21201f"
 
 [colors.line_indicator]
 background = "None"
 foreground = "None"
 
 [colors.bright]
-black = "#636869"
-blue = "#9bb7df"
-cyan = "#a9d4b4"
-green = "#c1d4a5"
-magenta = "#e9b9da"
-red = "#eb9899"
-white = "#aaaba0"
-yellow = "#e2c999"
+black = "#665c54"
+blue = "#95b3cf"
+cyan = "#95cfad"
+green = "#c7c96e"
+magenta = "#dc9eaf"
+red = "#f08c8c"
+white = "#bdae93"
+yellow = "#fbca59"
 
 [colors.normal]
-black = "#636869"
-blue = "#82a5d7"
-cyan = "#93c9a1"
-green = "#b2c98f"
-magenta = "#e3a8d1"
-red = "#e67e80"
-white = "#d5d6c8"
-yellow = "#dbbc7f"
+black = "#665c54"
+blue = "#7ba0c3"
+cyan = "#7bc398"
+green = "#b9bb4a"
+magenta = "#d3869b"
+red = "#ec6f6f"
+white = "#efe2c1"
+yellow = "#fabd2f"
 
 [colors.primary]
-background = "#202729"
-bright_foreground = "#aaaba0"
-dim_foreground = "#e6e6de"
-foreground = "#d5d6c8"
+background = "#282828"
+bright_foreground = "#bdae93"
+dim_foreground = "#fbf1c7"
+foreground = "#efe2c1"
 
 [colors.search.focused_match]
-background = "#b2c98f"
-foreground = "#202729"
+background = "#b9bb4a"
+foreground = "#282828"
 
 [colors.search.matches]
-background = "#82a5d7"
-foreground = "#202729"
+background = "#7ba0c3"
+foreground = "#282828"
 
 [colors.selection]
-background = "#232b2e"
-text = "#d5d6c8"
+background = "#32302f"
+text = "#efe2c1"
 
 [colors.vi_mode_cursor]
-cursor = "#d5d6c8"
-text = "#202729"
+cursor = "#efe2c1"
+text = "#282828"
     

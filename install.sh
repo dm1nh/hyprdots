@@ -49,7 +49,7 @@ sudo cp ./config/hypr/wallpapers/greet.png /usr/share/sddm/themes/astronaut/
 sudo cp -r ./misc/modprobe.d /etc/
 
 # Install GTK themes
-cp -r ./theme/gtk/Cozy ~/.local/share/themes/
+cp -r ./themes/Gruvbox-Green-Dark ~/.local/share/themes/
 
 # Backup old configs
 mv ~/.config ~/.config.backup
