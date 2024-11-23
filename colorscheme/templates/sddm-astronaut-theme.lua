@@ -28,11 +28,11 @@ ScreenHeight="1080"
 
 ## [Blur Settings]
 
-FullBlur="true"
+FullBlur="false"
 PartialBlur="false"
 ## Enable or disable the blur effect; if HaveFormBackground is set to true then PartialBlur will trigger the BackgroundColor of the form element to be partially transparent and blend with the blur.
 
-BlurRadius="32"
+BlurRadius="0"
 ## Set the strength of the blur effect. Anything above 100 is pretty strong and might slow down the rendering time. 0 is like setting false for any blur.
 
 
@@ -42,7 +42,7 @@ BlurRadius="32"
 HaveFormBackground="false"
 ## Have a full opacity background color behind the form that takes slightly more than 1/3 of screen estate;  if PartialBlur is set to true then HaveFormBackground will trigger the BackgroundColor of the form element to be partially transparent and blend with the blur.
 
-FormPosition="center"
+FormPosition="left"
 ## Position of the form which takes roughly 1/3 of screen estate. Can be left, center or right.
 
 BackgroundImageHAlignment="center"
@@ -51,11 +51,11 @@ BackgroundImageHAlignment="center"
 BackgroundImageVAlignment="center"
 ## As before but for the vertical position of the background picture relative to its visible area.
 
-MainColor="${accent}"
+MainColor="${white1}"
 ## Used for all elements when not focused/hovered etc. Usually the best effect is achieved by having this be either white or a very dark grey like #444 (not black for smoother antialias)
 ## Colors can be HEX or Qt names (e.g. red/salmon/blanchedalmond). See https://doc.qt.io/qt-5/qml-color.html
 
-AccentColor="${accent}"
+AccentColor="${white1}"
 ## Used for elements in focus/hover/pressed. Should be contrasting to the background and the MainColor to achieve the best effect.
 
 OverrideTextFieldColor=""
@@ -64,7 +64,7 @@ OverrideTextFieldColor=""
 BackgroundColor="${dark1}"
 ## Used for the user and session selection background as well as for ScreenPadding and FormBackground when either is true. If PartialBlur and FormBackground are both enabled this color will blend with the blur effect.
 
-placeholderColor="${dark4}"
+placeholderColor="${dark5}"
 ## Placholder text color. Example: username, password.
 
 IconColor="${white1}"

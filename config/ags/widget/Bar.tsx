@@ -16,8 +16,8 @@ function Workspaces() {
         .map((id) => (
           <button
             className="workspace-button"
-            widthRequest={18}
-            heightRequest={18}
+            widthRequest={16}
+            heightRequest={16}
             setup={(self) => {
               function update() {
                 self.toggleClassName(
@@ -178,12 +178,12 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
       application={App}
     >
       <centerbox>
-        <box hexpand halign={Gtk.Align.START} spacing={16}>
+        <box hexpand halign={Gtk.Align.START} spacing={20}>
           <Workspaces />
           <FocusedClient />
         </box>
         <box></box>
-        <box hexpand halign={Gtk.Align.END} spacing={16}>
+        <box hexpand halign={Gtk.Align.END} spacing={20}>
           <Volume />
           <IdleInhibitor />
           <Clock />

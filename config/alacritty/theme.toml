@@ -2,7 +2,7 @@
 # ~/.config/alacritty/theme.toml
 
 [colors.cursor]
-cursor = "#efe2c1"
+cursor = "#ebdbb2"
 text = "#282828"
 
 [colors.footer_bar]
@@ -11,10 +11,10 @@ foreground = "#21201f"
 
 [colors.hints.end]
 background = "#21201f"
-foreground = "#efe2c1"
+foreground = "#ebdbb2"
 
 [colors.hints.start]
-background = "#efe2c1"
+background = "#ebdbb2"
 foreground = "#21201f"
 
 [colors.line_indicator]
@@ -28,7 +28,7 @@ cyan = "#95cfad"
 green = "#c7c96e"
 magenta = "#dc9eaf"
 red = "#f08c8c"
-white = "#bdae93"
+white = "#d5c4a1"
 yellow = "#fbca59"
 
 [colors.normal]
@@ -38,17 +38,17 @@ cyan = "#7bc398"
 green = "#b9bb4a"
 magenta = "#d3869b"
 red = "#ec6f6f"
-white = "#efe2c1"
+white = "#ebdbb2"
 yellow = "#fabd2f"
 
 [colors.primary]
 background = "#282828"
-bright_foreground = "#bdae93"
+bright_foreground = "#d5c4a1"
 dim_foreground = "#fbf1c7"
-foreground = "#efe2c1"
+foreground = "#ebdbb2"
 
 [colors.search.focused_match]
-background = "#b9bb4a"
+background = "#ebdbb2"
 foreground = "#282828"
 
 [colors.search.matches]
@@ -57,9 +57,9 @@ foreground = "#282828"
 
 [colors.selection]
 background = "#32302f"
-text = "#efe2c1"
+text = "#ebdbb2"
 
 [colors.vi_mode_cursor]
-cursor = "#efe2c1"
+cursor = "#ebdbb2"
 text = "#282828"
     

@@ -6,7 +6,7 @@
 background = #282828
 fullscreen = false
 overlay = true
-overlay_text_color = #efe2c1
+overlay_text_color = #ebdbb2
 overlay_background_color = #32302f
 overlay_background_alpha = ff
 overlay_font = Galax Nerd Font Regular:16

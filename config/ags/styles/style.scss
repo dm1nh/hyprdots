@@ -6,7 +6,6 @@ $font-icon: Material Symbols Rounded;
 window.bar {
   all: unset;
   background: transparent;
-  color: $dark;
 
   button {
     all: unset;
@@ -14,7 +13,7 @@ window.bar {
 
   > centerbox {
     min-height: 28px;
-    background: $dark;
+    background: $dark0;
   }
 
   .workspaces {
@@ -22,8 +21,8 @@ window.bar {
 
     .workspace-button {
       all: unset;
-      min-width: 18px;
-      min-height: 18px;
+      min-width: 16px;
+      min-height: 16px;
       border-radius: 50%;
       background: $dark3;
       transition: 250ms background;
@@ -35,7 +34,7 @@ window.bar {
     }
 
     .workspace-button.occupied {
-      background: $blue1;
+      background: $grey1;
     }
   }
 
@@ -45,13 +44,13 @@ window.bar {
     .client-app {
       margin-left: 8px;
       font-family: $font;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
 
   .volume {
-    color: $accent;
+    color: $purple1;
 
     .volume-icon {
       font-family: $font-icon;
@@ -61,13 +60,13 @@ window.bar {
     .volume-value {
       margin-left: 8px;
       font-family: $font;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
 
   .idle-inhibitor {
-    color: $accent;
+    color: $green1;
 
     .idle-inhibitor-icon {
       font-family: $font-icon;
@@ -78,7 +77,7 @@ window.bar {
   .clock {
     margin-right: 6px;
     font-family: $font;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     color: $white2;
   }
