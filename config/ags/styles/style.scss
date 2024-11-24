@@ -13,7 +13,7 @@ window.bar {
 
   > centerbox {
     min-height: 28px;
-    background: $dark0;
+    background: $dark;
   }
 
   .workspaces {
@@ -24,17 +24,17 @@ window.bar {
       min-width: 16px;
       min-height: 16px;
       border-radius: 50%;
-      background: $dark3;
+      background: $dark1;
       transition: 250ms background;
     }
 
     .workspace-button.focused,
     .workspace-button.focused.occupied {
-      background: $accent;
+      background: $green2;
     }
 
     .workspace-button.occupied {
-      background: $grey1;
+      background: $dark4;
     }
   }
 
@@ -50,7 +50,7 @@ window.bar {
   }
 
   .volume {
-    color: $purple1;
+    color: $yellow2;
 
     .volume-icon {
       font-family: $font-icon;
@@ -66,7 +66,7 @@ window.bar {
   }
 
   .idle-inhibitor {
-    color: $green1;
+    color: $orange2;
 
     .idle-inhibitor-icon {
       font-family: $font-icon;

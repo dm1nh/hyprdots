@@ -1,6 +1,6 @@
 local palette = {
 	-- dark
-	dark = "#131819",
+	dark = "#191818",
 	dark0 = "#21201f",
 	dark1 = "#282828",
 	dark2 = "#32302f",
