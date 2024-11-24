@@ -4,7 +4,7 @@
 # ▐█▄▪▐█ ▐█▌·▐█ ▪▐▌▐█•█▌▐█▄▪▐███▌▐▀▐█▌▐█▪·•
 #  ▀▀▀▀  ▀▀▀  ▀  ▀ .▀  ▀ ▀▀▀▀ ▀▀▀ ·▀▀▀.▀   
 # Created by: Dang Minh Ngo
-# Github: @dangminhngo
+# Github: @dm1nh
 # Email: dangminhngo.dev@gmail.com
 
 [username]
@@ -24,12 +24,12 @@ style = "white"
 ahead = "󰄿 ${count}"
 diverged = "󰄿 ${ahead_count}; 󰄼 ${behind_count}"
 behind = "󰄼 ${count}"
-deleted = "󰅚 "
+deleted = "󰍚 "
 
 # Last param in the first line/row
 [cmd_duration]
-min_time = 2000
-format = " 󰞌 [$duration]($style)"
+min_time = 3000
+format = " 󰀠 [$duration]($style)"
 disabled = false
 
 ## SECOND LINE/ROW: Prompt
@@ -65,7 +65,7 @@ disabled = true
 # Prompt: param 2
 [character]
 success_symbol = " [󰘧](bold cyan)"
-error_symbol = " [󰄾](bold red)"
+error_symbol = " [󰄿](bold red)"
 
 [aws]
 symbol = "󰅟 "
@@ -89,7 +89,7 @@ symbol = " "
 symbol = "󰘬 "
 
 [golang]
-symbol = " "
+symbol = " "
 
 [hg_branch]
 symbol = "󰘬 "
