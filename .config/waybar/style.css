@@ -1,0 +1,80 @@
+@import url("./colors.css");
+
+* {
+    font-family: "HollowNight Nerd Font", monospace;
+    font-weight: 500;
+}
+
+window#waybar {
+		font-size: 18px;
+    background-color: @bg;
+    color: @fg;
+}
+
+#workspaces button {
+		all: unset;
+		font-size: 12px;
+    padding: 4px 6px;
+    background: transparent;
+		color: @dark5;
+}
+#workspaces button.active {
+    color: @accent;
+}
+#workspaces button.active.empty {
+    color: @accent;
+}
+#workspaces button.empty {
+    color: @fg_gutter;
+}
+
+
+#clock,
+#custom-sep,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#wireplumber,
+#tray {
+		font-size: 18px;
+    padding: 0 8px;
+    color: @fg;
+}
+
+#custom-sep {
+    color: @bg_highlight;
+}
+
+#clock {
+    color: @yellow;
+}
+
+#battery {
+    color: @purple;
+}
+
+#disk {
+    color: @cyan;
+}
+
+#memory {
+    color: @magenta;
+}
+
+#cpu {
+    color: @green1;
+}
+
+#network {
+    color: @purple;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#wireplumber {
+	color: @green;
+}

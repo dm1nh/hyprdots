@@ -1,0 +1,26 @@
+# Background image and scaling
+image=$HOME/.config/hpaper/wallpapers/lock-background.png
+scaling=fill
+
+# Colors (ARGB format: rrggbb[aa])
+inside-color=00000088
+inside-clear-color=00000088
+inside-ver-color=00000088
+inside-wrong-color=00000088
+
+ring-color=344252
+ring-clear-color=bc9f76
+ring-ver-color=344252
+ring-wrong-color=bf8585
+
+key-hl-color=344252
+bs-hl-color=bf8585
+
+text-color=ffffff
+text-clear-color=ffffff
+text-ver-color=ffffff
+text-wrong-color=ffffff
+
+# Font settings
+font=HollowNight Nerd Font
+font-size=16

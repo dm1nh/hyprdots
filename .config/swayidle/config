@@ -1,0 +1,4 @@
+timeout 300 'swaylock -f' \
+timeout 600 'niri msg output off' \
+resume 'niri msg output on' \
+before-sleep 'swaylock -f'
