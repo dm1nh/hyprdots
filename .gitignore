@@ -14,6 +14,7 @@
 !/.config/hypr
 !/.config/imv
 !/.config/Kvantum
+!/.config/mako
 !/.config/nvim
 /.config/nvim/lazy-lock.json
 !/.config/rofi

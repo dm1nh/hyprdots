@@ -1,10 +1,10 @@
 local templates = {
 	"btop",
-	"dunst",
 	"fish",
 	"foot",
 	"hyprland",
 	"imv",
+	"mako",
 	"rofi",
 	"sddm-astronaut-theme",
 	"waybar",

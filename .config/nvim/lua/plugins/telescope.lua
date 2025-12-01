@@ -17,8 +17,20 @@ return {
 	keys = function()
 		local builtin = require("telescope.builtin")
 		return {
-			{ "<leader><leader>", builtin.find_files, desc = "Files" },
-			{ "<leader>/", builtin.live_grep, desc = "Grep" },
+			{
+				"<leader><leader>",
+				function()
+					builtin.find_files({ hidden = true })
+				end,
+				desc = "Files",
+			},
+			{
+				"<leader>/",
+				function()
+					builtin.live_grep({ hidden = true })
+				end,
+				desc = "Grep",
+			},
 
 			-- find
 			{
@@ -33,7 +45,13 @@ return {
 				builtin.buffers,
 				desc = "Buffers (all)",
 			},
-			{ "<leader>ff", builtin.find_files, desc = "Files" },
+			{
+				"<leader>ff",
+				function()
+					builtin.find_files({ hidden = true })
+				end,
+				desc = "Files",
+			},
 			{ "<leader>fg", builtin.find_files, desc = "Git files" },
 			{ "<leader>fr", builtin.oldfiles, desc = "Recent files" },
 
@@ -57,7 +75,13 @@ return {
 				end,
 				desc = "Diagnostics (buffer)",
 			},
-			{ "<leader>sg", builtin.live_grep, desc = "Grep" },
+			{
+				"<leader>sg",
+				function()
+					builtin.live_grep({ hidden = true })
+				end,
+				desc = "Grep",
+			},
 			{ "<leader>sh", builtin.help_tags, desc = "Help tags" },
 			{ "<leader>sk", builtin.keymaps, desc = "Keymaps" },
 			{ "<leader>sw", builtin.grep_string, desc = "Search current word" },

@@ -1,0 +1,34 @@
+# Mako config with tokyonight colorscheme
+max-history=5
+sort=-time
+
+max-icon-size=48
+icon-path=/usr/share/icons/Papirus-Dark:/usr/share/icons/hicolor
+font=HollowNight Nerd Font 14
+width=360
+height=200
+margin=6
+padding=12
+border-size=2
+border-radius=12
+
+background-color=#191B29
+text-color=#c8d3f5
+border-color=#82aaff
+progress-color=#82aaff
+
+# Urgency overrides
+[urgency=low]
+border-color=#82aaff
+default-timeout=2000
+
+[urgency=normal]
+border-color=#82aaff
+default-timeout=3000
+
+[urgency=high]
+background-color=#191B29
+text-color=#c8d3f5
+border-color=#ff757f
+default-timeout=0
+		
