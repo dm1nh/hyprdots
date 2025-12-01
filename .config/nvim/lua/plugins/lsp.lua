@@ -40,8 +40,8 @@ return {
 						},
 					},
 					keys = {
-						{ "<leader>cl", "<cmd>LspInfo<cr>", { desc = "LspInfo" } },
-						{ "gd", vim.lsp.buf.definition, { desc = "Goto Definition" } },
+						{ "<leader>cl", "<cmd>LspInfo<cr>", desc = "LspInfo" },
+						{ "gd", vim.lsp.buf.definition, desc = "Goto Definition" },
 					},
 				},
 				lua_ls = {
@@ -90,6 +90,29 @@ return {
 			},
 		},
 		config = function(_, opts)
+			local function map(key)
+				local lhs = key[1]
+				local rhs = key[2]
+				local mode = key["mode"] or "n"
+
+				local key_opts = {}
+				for k, v in pairs(key) do
+					if k ~= 1 and k ~= 2 and k ~= "mode" then
+						key_opts[k] = v
+					end
+				end
+
+				vim.keymap.set(mode, lhs, rhs, key_opts)
+			end
+
+			for server, server_opts in pairs(opts.servers) do
+				if type(server_opts) == "table" and server_opts.keys then
+					for _, key in pairs(server_opts.keys) do
+						map(key)
+					end
+				end
+			end
+
 			if opts.servers["*"] then
 				vim.lsp.config("*", opts.servers["*"])
 			end

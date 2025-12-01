@@ -21,6 +21,7 @@ return { -- Useful plugin to show you pending keybinds.
 				{ "<leader>t", group = "Toggle" },
 				{ "<leader>g", group = "Git" },
 				{ "<leader>gh", group = "Git [h]unk" },
+				{ "<leader>q", group = "Session" },
 				{ "<leader>u", group = "UI" },
 				{ "<leader>x", group = "Diag" },
 				{ "<leader>/", name = "Grep" },
