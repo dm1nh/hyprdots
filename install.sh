@@ -30,16 +30,13 @@ rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
 
 # Copy fonts
-sudo cp -R ./fonts/{JetBrainsMonoNerdFont,Roboto,MaterialSymbols,NotoColorEmoji-Regular.ttf} /usr/share/fonts/
+cp -r ./fonts/{HollowNightNerdFont,MaterialSymbols,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
 fc-cache -r
 
 # Install sddm astronaut theme
-sudo rm -rf /usr/share/sddm/themes/astronaut
-sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-sudo cp -r ./misc/sddm.conf.d /etc/
-sudo cp ./misc/sddm-astronaut-theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
-sudo cp ./config/sddm-astronaut-theme/theme.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/
-sudo cp ./config/hypr/wallpapers/greet.jpg /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
+sudo cp ./config/sddm-astronaut-theme/astronaut.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/
+sudo cp ./config/hpaper/wallpapers/login-background.png /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 
 # Fix function keys on apple keyboards or other machenical keyboards
 sudo cp -r ./misc/modprobe.d /etc/

@@ -75,7 +75,7 @@ quit() {
     hyprctl dispatch exit 0
     ;;
   $lock)
-    ~/.config/hypr/scripts/util.sh lock
+		swaylock
     ;;
   $suspend)
     systemctl suspend
@@ -83,36 +83,8 @@ quit() {
   esac
 }
 
-screenrecord() {
-  theme="~/.config/rofi/screenrecord.rasi"
-  killall -q rofi
-
-  # Options
-  sound=""
-  nosound=""
-
-  # Variables passed to dmenu
-  opts="$sound\n$nosound"
-
-  opt=$(echo -e $opts | rofi -dmenu -p "gpu-recorder" -theme $theme)
-
-  if [ -z $opt ]; then
-    exit 0
-  fi
-
-  case $opt in
-
-  $sound)
-    ~/.config/hypr/scripts/screenrecord.sh --sound
-    ;;
-  $nosound)
-    ~/.config/hypr/scripts/screenrecord.sh
-    ;;
-  esac
-}
-
-shot() {
-  theme="~/.config/rofi/shot.rasi"
+screenshot() {
+  theme="~/.config/rofi/screenshot.rasi"
 
   killall -q rofi
 
@@ -121,55 +93,27 @@ shot() {
   selection=""
 
   # Variables passed to dmenu
-  opts="$fullscreen\n$selection"
+  opts="$screen\n$select"
 
-  opt=$(echo -e $opts | rofi -dmenu -p "grim" -theme $theme)
+  opt=$(echo -e $opts | rofi -dmenu -p "niri" -theme $theme)
 
   if [ -z $opt ]; then
     exit 0
   fi
 
   case $opt in
-  $fullscreen)
-    sleep 0.5
-    ~/.config/hypr/scripts/shot.sh --fullscreen
+  $screen)
+		niri msg action screenshot-screen
     ;;
-  $selection)
-    sleep 0.5
-    ~/.config/hypr/scripts/shot.sh --selection
+  $select)
+		niri msg action screenshot
     ;;
   esac
 }
 
-windows() {
-  theme="~/.config/rofi/windows.rasi"
-
-  killall -q rofi
-
-  opt=$(hyprctl clients -j | jq -r '.[] | "\(.pid) :: \(.title)"' | rofi -dmenu -p "Windows" -theme $theme)
-
-  if [ -z "$opt"]; then
-    exit 0
-  fi
-
-  IFS=" :: " read -a splitted <<<"$opt"
-
-  pid=${splitted[0]}
-
-  if [ -z "$pid"]; then
-    exit 0
-  fi
-
-  hyprctl dispatch focuswindow pid:$pid
-  exit 0
-}
-
 case $1 in
 colorpicker) colorpicker ;;
-docs) docs ;;
 applauncher) applauncher ;;
-record) record ;;
-shot) shot ;;
-windows) windows ;;
+screenshot) screenshot ;;
 quit) quit ;;
 esac
