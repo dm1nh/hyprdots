@@ -1,37 +1,8 @@
--- Set <space> as the leader key
--- See `:help mapleader`
---  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- This file is automatically loaded by lazyvim.config.init
 
+-- DO NOT USE `LazyVim.safe_keymap_set` IN YOUR OWN CONFIG!!
+-- use `vim.keymap.set` instead
 local map = vim.keymap.set
-
--- Clear highlights on search when pressing <Esc> in normal mode
---  See `:help hlsearch`
-map("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
--- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
--- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
--- is not what someone will guess without a bit more experience.
---
--- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
--- or just use <C-\><C-n> to exit terminal mode
-map("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-
--- TIP: Disable arrow keys in normal mode
--- map('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
--- map('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
--- map('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
--- map('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
-
--- Keybinds to make split navigation easier.
---  Use CTRL+<hjkl> to switch between windows
---
---  See `:help wincmd` for a list of all window commands
-map("n", "<C-h>", "<C-w><C-h>", { desc = "Focus left window" })
-map("n", "<C-l>", "<C-w><C-l>", { desc = "Focus right window" })
-map("n", "<C-j>", "<C-w><C-j>", { desc = "Focus lower window" })
-map("n", "<C-k>", "<C-w><C-k>", { desc = "Focus upper window" })
 
 -- better up/down
 map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
@@ -39,11 +10,17 @@ map({ "n", "x" }, "<Down>", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr =
 map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 map({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 
+-- Move to window using the <ctrl> hjkl keys
+map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
+map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
+map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
+
 -- Resize window using <ctrl> arrow keys
-map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase win height" })
-map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease win height" })
-map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease win width" })
-map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase win width" })
+map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- Move Lines
 map("n", "<A-j>", "<cmd>execute 'move .+' . v:count1<cr>==", { desc = "Move down" })
@@ -60,6 +37,12 @@ map("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 map("n", "]b", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to other buffer" })
 map("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to other buffer" })
+
+-- Clear search and stop snippet on escape
+map({ "i", "n", "s" }, "<esc>", function()
+	vim.cmd("noh")
+	return "<esc>"
+end, { expr = true, desc = "Escape and clear hlsearch" })
 
 -- Clear search, diff update and redraw
 -- taken from runtime/lua/_editor.lua
@@ -148,7 +131,7 @@ map("n", "<leader>ui", vim.show_pos, { desc = "Inspect pos" })
 map("n", "<leader>uI", function()
 	vim.treesitter.inspect_tree()
 	vim.api.nvim_input("I")
-end, { desc = "Inspect Tree" })
+end, { desc = "Inspect tree" })
 
 -- windows
 map("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = true })
@@ -157,7 +140,7 @@ map("n", "<leader>wd", "<C-W>c", { desc = "Delete window", remap = true })
 
 -- tabs
 map("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last tab" })
-map("n", "<leader><tab>o", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+map("n", "<leader><tab>o", "<cmd>tabonly<cr>", { desc = "Close Other tabs" })
 map("n", "<leader><tab>f", "<cmd>tabfirst<cr>", { desc = "First tab" })
 map("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New tab" })
 map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next tab" })
