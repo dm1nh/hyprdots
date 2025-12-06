@@ -1,105 +1,106 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", 
-    "position": "top", 
-    "height": 28, 
-    "spacing": 4, 
-
-    // Choose the order of the modules
-    "modules-left": [
-				"niri/workspaces",
-        "custom/sep",
-				"niri/window",
-    ],
-    "modules-center": [
-    ],
-
-    "modules-right": [
-        "tray",
-				"wireplumber",
-        "network",
-        "cpu",
-        "memory",
-        "disk",
-        "clock"
-    ],
-
-    // Modules configuration
-		"niri/workspaces": {
-			"format": "{icon}",
-			"format-icons": {
-				"default": ""
-			}
-		},
-		"niri/window": {
-			"format": "{}",
-			"rewrite": {
-				"(.*) - Mozilla Firefox": "🌎 $1",
-			}
-		},
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{icon}",
-    // "format-icons": {
-    // 	"default": "",
-    // 	"active": "",
-    // },
-    //     "persistent-workspaces": {
-    //         "*" : 6
-    //     }
-    // },
-    // "hyprland/window" : {
-    //     "max-length": 40,
-    //     "seperate-outputs": false
-    // },
-    "tray": {
-        "icon-size": 16,
-        "spacing": 8,
-    },
-	"wireplumber": {
-			"format": "󰕾 {volume}%",
-			"format-muted": "󰖁",
-			"on-click": "helvum",
-			"max-volume": 150,
-			"scroll-step": 1,
-			"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+	"layer": "top",
+	"position": "top",
+	"height": 28,
+	"spacing": 4,
+	// Choose the order of the modules
+	"modules-left": [
+		"niri/workspaces",
+		"custom/sep",
+		"niri/window"
+	],
+	"modules-center": [],
+	"modules-right": [
+		"tray",
+		"wireplumber",
+		"network",
+		"cpu",
+		"memory",
+		"disk",
+		"clock"
+	],
+	// Modules configuration
+	"niri/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"default": ""
+		}
 	},
-    "clock": {
-				"format": "󰥔 {:%H:%M}",
-        "format-alt": " {󰃭 :%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "󰘚 {usage}%",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "󰍛 {used}GiB"
-    },
-    "disk": {
-        "interval": 60,
-        "path": "/",
-        "format": "󰑹 {free}"
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "Bat: {capacity}% {icon} {time}",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "Bat {capacity}%",
-        "format-time": "{H}:{M}",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "network": {
-        "format": "󰌡 Online",
-        "format-disconnected": "⚠ Disconnected"
-    },
-    "custom/sep": {
-        "format" : "|",
-        "interval" : 0
-    }
+	"niri/window": {
+		"format": "{}",
+		"rewrite": {
+			"(.*) - Mozilla Firefox": "🌎 $1"
+		}
+	},
+	// "hyprland/workspaces": {
+	//     "disable-scroll": true,
+	//     "all-outputs": true,
+	//     "warp-on-scroll": false,
+	//     "format": "{icon}",
+	// "format-icons": {
+	// 	"default": "",
+	// 	"active": "",
+	// },
+	//     "persistent-workspaces": {
+	//         "*" : 6
+	//     }
+	// },
+	// "hyprland/window" : {
+	//     "max-length": 40,
+	//     "seperate-outputs": false
+	// },
+	"tray": {
+		"icon-size": 16,
+		"spacing": 8
+	},
+	"wireplumber": {
+		"format": "󰕾 {volume}%",
+		"format-muted": "󰖁",
+		"max-volume": 150,
+		"scroll-step": 1,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+	},
+	"clock": {
+		"format": "󰥔 {:%H:%M}",
+		"format-alt": " {󰃭 :%Y-%m-%d}"
+	},
+	"cpu": {
+		"format": "󰘚 {usage}%",
+		"tooltip": false
+	},
+	"memory": {
+		"format": "󰍛 {used}GiB"
+	},
+	"disk": {
+		"interval": 60,
+		"path": "/",
+		"format": "󰑹 {free}"
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "Bat: {capacity}% {icon} {time}",
+		"format-plugged": "{capacity}% ",
+		"format-alt": "Bat {capacity}%",
+		"format-time": "{H}:{M}",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"network": {
+		"format": "󰌡 Online",
+		"format-disconnected": "⚠ Disconnected"
+	},
+	"custom/sep": {
+		"format": "|",
+		"interval": 0
+	}
 }

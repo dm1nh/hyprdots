@@ -6,7 +6,6 @@
 /.config/fish/completions
 /.config/fish/fish_variables
 !/.config/foot
-!/.config/font.config
 !/.config/gtk-3.0
 /.config/gtk-3.0/bookmarks
 !/.config/gtk-4.0

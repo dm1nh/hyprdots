@@ -55,7 +55,8 @@ input {
 }
 
 layout {
-    gaps 6
+    gaps 5
+		background-color "transparent"
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
@@ -129,7 +130,7 @@ spawn-sh-at-startup "wlsunset -S 6:30 -s 20:00 -t 4500 -T 5000"
 spawn-sh-at-startup "QT_QPA_PLATFORM=xcb /usr/lib/pentablet/PenTablet.sh /mini"
 
 hotkey-overlay {
-    // skip-at-startup
+    skip-at-startup
 }
 
 prefer-no-csd

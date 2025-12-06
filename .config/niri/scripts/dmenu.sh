@@ -123,7 +123,7 @@ screenshot() {
   # Variables passed to dmenu
   opts="$fullscreen\n$selection"
 
-  opt=$(echo -e $opts | rofi -dmenu -p "grim" -theme $theme)
+  opt=$(echo -e $opts | rofi -dmenu -p "niri" -theme $theme)
 
   if [ -z $opt ]; then
     exit 0
